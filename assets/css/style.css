@@ -167,6 +167,10 @@ a:hover{
     animation: flying_fifi 1s ease-in-out infinite;
 }
 
+@keyframes flying_fifi {
+    
+}
+
 img {
     height: 200px;
     width: 200px;
