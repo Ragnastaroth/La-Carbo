@@ -163,7 +163,9 @@ a:hover{
   
 }
 
-
+.fifi {
+    animation: flying_fifi 1s ease-in-out infinite;
+}
 
 img {
     height: 200px;
