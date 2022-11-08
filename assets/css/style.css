@@ -219,8 +219,14 @@ h2 {
     font-family: "chicken";
     border: 1px solid pink;
     border-radius: 15px;
-    transform: translateX(220%);
     transition: all 0,5s ease-in-out;
+}
+
+.botPart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #carboChrono:hover {
@@ -244,7 +250,6 @@ h2 {
 
 .video {
     margin: 1rem auto;
-    transform: translateX(25%);
 }
 
 .phil {
