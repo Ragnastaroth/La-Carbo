@@ -50,6 +50,7 @@ header {
 
 li {
     display: flex;
+    align-items: center;
     gap: 2rem;
     padding: 2rem;
 }
@@ -163,13 +164,7 @@ a:hover{
   
 }
 
-.fifi {
-    animation: flying_fifi 1s ease-in-out infinite;
-}
 
-@keyframes flying_fifi {
-    
-}
 
 img {
     height: 200px;
@@ -181,6 +176,7 @@ img {
 h2 {
     color: palevioletred;
     font-family: "chicken";
+    font-weight: lighter;
     margin-bottom: 1rem;   
 }
 
@@ -205,6 +201,7 @@ h2 {
 .p_recipe {
     margin-bottom: 0.25rem;
     font-size: small;
+    font-weight: lighter;
 }
 
 #top_part {
@@ -222,15 +219,66 @@ h2 {
     font-family: "chicken";
     border: 1px solid pink;
     border-radius: 15px;
-    transform: translateX(210%);
+    transform: translateX(220%);
+}
+
+#showChrono {
+  font-family: "chicken";
+  font-size: 1.25rem;
+  color: palevioletred;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 .fifi {
     font-family: "chicken";
-    font-size: large;
+    font-size: 1rem;
+    color: palevioletred;
 }
 
 .video {
     margin: 1rem auto;
     transform: translateX(25%);
+}
+
+.phil {
+  animation: flying_fifi 15s ease-in-out infinite;
+}
+
+@keyframes flying_fifi {
+
+  10% {
+    transform:scale(25%);
+  }
+
+  20% {
+    transform:scale(25%);
+    transform:rotate(180deg);
+  }
+
+  30% {
+    transform:scale(25%);
+    transform:rotate(180deg);
+    transform: translate(50%, 50%);
+  }
+
+  40% {
+    transform:scale(25%);
+    transform:rotate(180deg);
+    transform: translate(-75%, -75%);
+  }
+  50% {
+    transform:rotate(180deg);
+  }
+
+  75% {
+    transform:scale(25%);
+    transform:rotate(180deg);
+    transform: translate(-30%, 25%);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+  
 }

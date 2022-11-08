@@ -14,7 +14,7 @@ let stopbtn = document.getElementById("anim");
 let h1 = document.querySelector("h1");
 let imgNav = document.getElementById("imgNav");
 let imgNav2 = document.getElementById("imgNav2");
-document.addEventListener('click', anim);
+minBtn.addEventListener('click', anim);
 
 function anim(){
     nav.classList.toggle('headerBg');
@@ -23,3 +23,24 @@ function anim(){
     imgNav2.classList.toggle('displayNone');   
 }
 
+const showChrono = document.getElementById("showChrono");
+let nombre = 480;
+
+minBtn.addEventListener("click", chrono);
+
+
+function chrono() {
+  showChrono.innerHTML = nombre;
+  nombre = nombre - 1;
+  if (nombre >= 0){
+    setTimeout(chrono, 1000)
+  }
+}
+
+const fifi = document.querySelector(".video");
+
+minBtn.addEventListener("click", flying);
+
+function flying() {
+  fifi.classList.toggle("phil");
+}
