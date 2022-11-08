@@ -220,6 +220,12 @@ h2 {
     border: 1px solid pink;
     border-radius: 15px;
     transform: translateX(220%);
+    transition: all 0,5s ease-in-out;
+}
+
+#carboChrono:hover {
+  background: rgb(81,189,55);
+  background: linear-gradient(38deg, rgba(81,189,55,1) 24%, rgba(253,29,203,1) 56%, rgba(252,237,69,1) 100%);
 }
 
 #showChrono {
